@@ -88,7 +88,7 @@ Then, you can create a new database in either phpMyAdmin or MySQL Workbench and 
 3. indexes.sql
    
 
-   And then you can execute the queries either one by one (preferably) or as a whole, in the file: 
+ And then you can execute the queries either one by one (preferably) or as a whole, in the file: 
 
 4. queries.sql 
 
