@@ -73,7 +73,7 @@ cd C:\Desktop
 and executing: 
 
 ```sh
-git clone (https://github.com/ntua-el20889/Databases-project.git) 
+git clone https://github.com/ntua-el20889/Databases2023-2024.git
 ```
 
 #### REST Api
