@@ -14,7 +14,7 @@
 
 Ενδεικτικά περιεχόμενα:
 
-- [Back-end](#Back-end)
+- [schema.sql](#schema.sql)
 - [Database dump (sql ή json)](#Database-dump)
 - [Back-end functional tests](#Back-end-functional-tests)
 - [Back-end unit tests](#Back-end-unit-tests)
