@@ -76,14 +76,21 @@ and executing:
 git clone https://github.com/ntua-el20889/Databases2023-2024.git
 ```
 
-#### REST Api
+#### Database Creation
 
-1. Διαχειριστικά endpoints
-2. Λειτουργίες συστήματος (υπόλοιπα endpoints)
-3. Άλλα endpoints απαραίτητα για τα use cases ή για την ομαλή λειτουργία του Frontend
+Then, you can create a new database in either phpMyAdmin or MySQL Workbench and  import the SQL files in the following order: 
+  
 
-#### Database Connection
+1. schema.sql 
 
+2. initial_data.sql 
+
+3. indexes.sql
+   
+
+   And then you can execute the queries either one by one (preferably) or as a whole, in the file: 
+
+4. queries.sql 
 
 
 
