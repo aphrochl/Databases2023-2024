@@ -30,12 +30,12 @@ We worked with MySQL to create the database and we used MySQL Workbench and phpM
    https://www.apachefriends.org/download.html
 
    
-After opening it, enable the Apache and MySQL Modules.
+   After opening it, enable the Apache and MySQL Modules.
 
-(εδώ να μπει η παπαριά για το αν εχετε κατειλλημενη θυρα κτλ) 
+   (εδώ να μπει η παπαριά για το αν εχετε κατειλλημενη θυρα κτλ) 
 
 
-2. Open phpMyAdmin at:
+3. Open phpMyAdmin at:
 
    http://localhost/phpmyadmin/
 
