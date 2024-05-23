@@ -60,7 +60,21 @@ After opening it, enable the Apache and MySQL Modules.
 
 ## Database
 
-Στο Back-end υλοποιούμε τα εξής:
+Steps to create/populate the database: 
+
+#### Git clone
+
+You can git clone our github repository for easy access to the SQL files, by firstly going to the desired directory in the command line: 
+
+```sh
+cd C:\Desktop 
+```
+
+and executing: 
+
+```sh
+git clone (https://github.com/ntua-el20889/Databases-project.git) 
+```
 
 #### REST Api
 
