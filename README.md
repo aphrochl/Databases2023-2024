@@ -88,18 +88,8 @@ Then, you can create a new database in either phpMyAdmin or MySQL Workbench and 
 3. indexes.sql
    
 
- And then you can execute the queries either one by one (preferably) or as a whole, in the file: 
+ You can execute the queries either one by one (preferably) or as a whole, in the file: 
 
 4. queries.sql 
 
 
-
-
-## Installation
-
-To install the back-end, copy the files in the back-end folder into your desired directory.
-Install the packages:
-
-```sh
-npm install
-```
