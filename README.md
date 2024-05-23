@@ -82,9 +82,10 @@ Then, you can create a new database in either phpMyAdmin or MySQL Workbench and 
   
 1. [schema.sql](https://github.com/ntua-el20889/Databases2023-2024/blob/main/database/schema.sql)
 
-#### 2. [initial_data.sql](https://github.com/ntua-el20889/Databases2023-2024/blob/main/database/initial_data.sql)
+2. [initial_data.sql](https://github.com/ntua-el20889/Databases2023-2024/blob/main/database/initial_data.sql)
 
-#### 3. [indexes.sql](https://github.com/ntua-el20889/Databases2023-2024/blob/main/database/indexes.sql)
+3. [indexes.sql](https://github.com/ntua-el20889/Databases2023-2024/blob/main/database/indexes.sql)
 
- You can execute the queries either one by one (preferably) or as a whole, in the file: 
-#### 4. [queries.sql](https://github.com/ntua-el20889/Databases2023-2024/blob/main/database/queries.sql )
+ You can execute the queries either one by one (preferably) or as a whole, in the file:
+ 
+4. [queries.sql](https://github.com/ntua-el20889/Databases2023-2024/blob/main/database/queries.sql )
