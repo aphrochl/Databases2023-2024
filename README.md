@@ -28,15 +28,32 @@ We worked with MySQL to create the database and we used MySQL Workbench and phpM
 
 1. Install XAMPP:
 
-https://www.apachefriends.org/download.html
+   https://www.apachefriends.org/download.html
+
+   
+After opening it, enable the Apache and MySQL Modules.
+
+(εδώ να μπει η παπαριά για το αν εχετε κατειλλημενη θυρα κτλ) 
 
 
+2. Open phpMyAdmin at:
+
+   http://localhost/phpmyadmin/
+
+   and you’re ready to create a new database!
 
 
+   Alternatively, you can use MySQL Workbench: 
 
+2. Install MySQL Workbench at:
 
-2. 
+   https://dev.mysql.com/downloads/workbench/
 
+   After creating a connection (i.e. ”Username” as “root”), you should specify the “Port” as “3306”, or whichever port you have on the MySQL Module in XAMPP. 
+
+   After opening the connection, again you’re ready to create a new database! Specifically, ours. 
+
+ 
 
 
 
