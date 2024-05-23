@@ -12,7 +12,6 @@
 
  # Contents
 
-Ενδεικτικά περιεχόμενα:
 
 - [Prerequisites](#Prerequisites)
 - [Database](#Database)
