@@ -35,14 +35,14 @@ We worked with MySQL to create the database and we used MySQL Workbench and phpM
    (εδώ να μπει η παπαριά για το αν εχετε κατειλλημενη θυρα κτλ) 
 
 
-3. Open phpMyAdmin at:
+2. Open phpMyAdmin at:
 
    http://localhost/phpmyadmin/
 
    and you’re ready to create a new database!
 
 
-   Alternatively, you can use MySQL Workbench: 
+Alternatively, you can use MySQL Workbench: 
 
 2. Install MySQL Workbench at:
 
