@@ -76,7 +76,7 @@ and executing:
 git clone https://github.com/ntua-el20889/Databases2023-2024.git
 ```
 
-#### [Database Creation](https://github.com/ntua-el20889/Databases2023-2024/tree/main/database)
+#### Database Creation
 
 Then, you can create a new database in either phpMyAdmin or MySQL Workbench and  import the SQL files in the following order: 
   
