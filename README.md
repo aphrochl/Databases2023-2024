@@ -86,6 +86,6 @@ Then, you can create a new database in either phpMyAdmin or MySQL Workbench and 
 
 3. [indexes.sql](https://github.com/ntua-el20889/Databases2023-2024/blob/main/database/indexes.sql)
 
- You can execute the queries either one by one (preferably) or as a whole, in the file:
+   You can execute the queries either one by one (preferably) or as a whole, in the file:
  
 4. [queries.sql](https://github.com/ntua-el20889/Databases2023-2024/blob/main/database/queries.sql )
