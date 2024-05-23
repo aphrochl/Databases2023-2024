@@ -80,6 +80,7 @@ git clone https://github.com/ntua-el20889/Databases2023-2024.git
 
 Then, you can create a new database in either phpMyAdmin or MySQL Workbench and  import the SQL files in the following order: 
   
+### [1. schema.sql ](https://github.com/ntua/softeng23-55/blob/main/back-end/README.md)
 
 1. schema.sql 
 
