@@ -22,6 +22,22 @@
 
 ## Prerequisites
 
+Steps to install/run the prerequisites for our database: 
+
+We worked with MySQL to create the database and we used MySQL Workbench and phpMyAdmin interchangeably. 
+
+1. Install XAMPP:
+
+https://www.apachefriends.org/download.html
+
+
+
+
+
+
+2. 
+
+
 
 
 
