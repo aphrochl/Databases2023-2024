@@ -71,9 +71,17 @@ GROUP BY t1.name, t2.name
 ORDER BY Occurrences DESC
 LIMIT 3;
 
--- Force Index: You could use a FORCE INDEX clause to guide the optimizer to use a specific index.
--- FROM RecipeTag rt1 
--- JOIN RecipeTag rt2 FORCE INDEX (idx_recipe_tag_recipeID) ON rt1.recipeID = rt2.recipeID AND rt1.tagID < rt2.tagID
+-- query 6 with force index
+SELECT t1.name AS Tag1, t2.name AS Tag2, COUNT(*) AS Occurrences
+FROM RecipeTag rt1 FORCE INDEX (idx_recipeTag_recipeID_tagID)
+JOIN RecipeTag rt2 FORCE INDEX (idx_recipeTag_recipeID_tagID) ON rt1.recipeID = rt2.recipeID AND rt1.tagID < rt2.tagID
+JOIN Tag t1 FORCE INDEX (idx_tag_name) ON rt1.tagID = t1.tagID
+JOIN Tag t2 FORCE INDEX (idx_tag_name) ON rt2.tagID = t2.tagID
+JOIN Recipe r FORCE INDEX (idx_recipe_recipeID) ON r.recipeID = rt1.recipeID
+JOIN RecipeSection rs FORCE INDEX (idx_recipeSection_recipeID) ON r.recipeID = rs.recipeID
+GROUP BY t1.name, t2.name
+ORDER BY Occurrences DESC
+LIMIT 3;
 
 -- query 8 
 SELECT e.episodeID, e.title, COUNT(DISTINCT re.equipmentID) AS total_equipment_used
