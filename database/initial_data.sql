@@ -1823,6 +1823,3 @@ INSERT INTO User (username, passwordHash, firstName, lastName, roleID) VALUES
 -- Create a Cook user and link to an existing cook
 INSERT INTO User (username, passwordHash, firstName, lastName, roleID) VALUES
 ('cook1', 'hashed_password', 'Gordon', 'Ramsay', (SELECT roleID FROM Role WHERE name = 'Cook'));
-
--- Link the Cook to the User
-UPDATE Cook SET userID = (SELECT userID FROM User WHERE username = 'cook1') WHERE firstName = 'Gordon' AND lastName = 'Ramsay';
