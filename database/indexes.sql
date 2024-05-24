@@ -21,3 +21,11 @@ CREATE INDEX idx_recipe_cook_episode ON RecipeCook(episodeID);
 CREATE INDEX idx_recipe_equipment_recipe ON RecipeEquipment(recipeID);
 
 CREATE INDEX idx_episode_year ON Episode(year);
+
+-- for query 6
+-- Ensure indexes on relevant columns
+CREATE INDEX idx_recipeTag_recipeID_tagID ON RecipeTag(recipeID, tagID);
+CREATE INDEX idx_recipeTag_tagID ON RecipeTag(tagID);
+CREATE INDEX idx_tag_name ON Tag(name);
+CREATE INDEX idx_recipe_recipeID ON Recipe(recipeID);
+CREATE INDEX idx_recipeSection_recipeID ON RecipeSection(recipeID);
