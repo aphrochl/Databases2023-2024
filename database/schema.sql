@@ -376,3 +376,5 @@ CREATE TABLE RolePermission (
 );
 ALTER TABLE Cook ADD COLUMN userID INT;
 ALTER TABLE Cook ADD CONSTRAINT fk_userID FOREIGN KEY (userID) REFERENCES User(userID);
+-- Link the Cook to the User
+UPDATE Cook SET userID = (SELECT userID FROM User WHERE username = 'cook1') WHERE firstName = 'Gordon' AND lastName = 'Ramsay';
