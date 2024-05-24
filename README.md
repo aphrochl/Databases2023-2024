@@ -32,10 +32,22 @@ We worked with MySQL to create the database and we used MySQL Workbench and phpM
    
    After opening it, enable the Apache and MySQL Modules.
 
-   (εδώ να μπει η παπαριά για το αν εχετε κατειλλημενη θυρα κτλ) 
+   If you get the below error:
+   Problem detected!
+   Port 3306 in use by "Unable to open process"!
+   MySQL WILL NOT start without the configured ports free!
+   You need to uninstall/disable/reconfigure the blocking application
+   or reconfigure MySQL and the Control Panel to listen on a different port
+
+   1) Stop the Apache Server from XAMPP Control Panel (if running)
+   2) Now open XAMPP Control Panel => Config (Top Right) => MySQL and change the Main Port to 3307 => Save => Save
+   3) Click Config of MySQL (From Control Panel only) => my.ini and then Change all the occurrences of 3306 to 3307 (Search using ctrl + F and replace all)
+   4) Click Config of Apache (From Control Panel only) => config.inc.php and then search for the line: $cfg['Servers'][$i]['host'] = '127.0.0.1';. Now add this below the line you found: $cfg['Servers'][$i]['port'] = '3307';
+
+Now, you are good to go. Also note that you would have to change port for all your projects to 3307 for them to work properly. For eg: from $servername = "localhost"; to $servername = "localhost:3307"; in the database config file of your project.
 
 
-2. Open phpMyAdmin at:
+3. Open phpMyAdmin at:
 
    http://localhost/phpmyadmin/
 
