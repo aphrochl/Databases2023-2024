@@ -32,7 +32,7 @@ LEFT JOIN
     Episode E ON R.recipeID = E.episodeID
 WHERE 
     Cu.name = 'Italian'  -- Replace 'Italian' with the desired cuisine name
-    AND YEAR(E.airDate) = 2023  -- Replace 2023 with the desired year
+    AND YEAR(E.airDate) = 2021  -- Replace 2021 with the desired year
 ORDER BY 
     E.airDate;
 
