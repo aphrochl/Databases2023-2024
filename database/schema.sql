@@ -342,6 +342,7 @@ CREATE TABLE Role (
     roleID INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) UNIQUE NOT NULL
 );
+
 -- User Table
 CREATE TABLE User (
     userID INT PRIMARY KEY AUTO_INCREMENT,
@@ -352,20 +353,14 @@ CREATE TABLE User (
     roleID INT,
     FOREIGN KEY (roleID) REFERENCES Role(roleID)
 );
--- UserRole Table
-CREATE TABLE UserRole (
-    userID INT,
-    roleID INT,
-    PRIMARY KEY (userID, roleID),
-    FOREIGN KEY (userID) REFERENCES User(userID),
-    FOREIGN KEY (roleID) REFERENCES Role(roleID)
-);
+
 -- Permission Table
 CREATE TABLE Permission (
     permissionID INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) UNIQUE NOT NULL,
     description VARCHAR(255)
 );
+
 -- RolePermission Table
 CREATE TABLE RolePermission (
     roleID INT,
@@ -374,7 +369,6 @@ CREATE TABLE RolePermission (
     FOREIGN KEY (roleID) REFERENCES Role(roleID),
     FOREIGN KEY (permissionID) REFERENCES Permission(permissionID)
 );
+
 ALTER TABLE Cook ADD COLUMN userID INT;
 ALTER TABLE Cook ADD CONSTRAINT fk_userID FOREIGN KEY (userID) REFERENCES User(userID);
--- Link the Cook to the User
-UPDATE Cook SET userID = (SELECT userID FROM User WHERE username = 'cook1') WHERE firstName = 'Gordon' AND lastName = 'Ramsay';
