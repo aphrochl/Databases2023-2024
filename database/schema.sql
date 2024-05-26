@@ -42,6 +42,7 @@ CREATE TABLE Recipe (
     proteinPerServing DECIMAL(10,2),
     carbohydratesPerServing DECIMAL(10,2),
     caloriesPerServing INT,
+    recipeType ENUM('Cooking', 'Baking') NOT NULL,
     FOREIGN KEY (cuisineID) REFERENCES Cuisine(cuisineID),
     FOREIGN KEY (baseIngredientID) REFERENCES Ingredient(ingredientID)
 );
