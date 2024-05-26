@@ -36,6 +36,7 @@ WHERE
 ORDER BY 
     E.airDate;
 
+
 -- query3
 SELECT 
     C.cookID,
@@ -273,7 +274,7 @@ ORDER BY
 LIMIT 1;
 
 -- query 15
-SELECT fg.foodGroupID, fg.name
+SELECT DISTINCT fg.foodGroupID, fg.name
 FROM FoodGroup fg
 LEFT JOIN Ingredient i ON fg.foodGroupID = i.foodGroupID
 LEFT JOIN Recipe r ON i.ingredientID = r.baseIngredientID
@@ -317,7 +318,6 @@ DELIMITER ;
 CALL CalculateCaloriesPerServing();
 
 SELECT recipeID, name, caloriesPerServing FROM Recipe;
-
 
 -- Episode selection
 
@@ -446,6 +446,7 @@ END //
 DELIMITER ;
 
 CALL GenerateEpisodeAssignments(1);
+
 
 -- winner
 DELIMITER //
