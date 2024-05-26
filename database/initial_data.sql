@@ -1816,10 +1816,17 @@ INSERT INTO RolePermission (roleID, permissionID)
 SELECT roleID, permissionID FROM Role, Permission
 WHERE Role.name = 'Cook' AND Permission.name IN ('edit_recipe', 'add_recipe', 'edit_personal_details');
 
--- Create an Administrator user
+-- Create an Administrator user with hashed password
 INSERT INTO User (username, passwordHash, firstName, lastName, roleID) VALUES
-('admin', 'hashed_password', 'Admin', 'User', (SELECT roleID FROM Role WHERE name = 'Administrator'));
+('admin', SHA2('admin_password', 256), 'Admin', 'User', (SELECT roleID FROM Role WHERE name = 'Administrator'));
 
--- Create a Cook user and link to an existing cook
+-- Create a Cook user with hashed password and link to an existing cook
 INSERT INTO User (username, passwordHash, firstName, lastName, roleID) VALUES
-('cook1', 'hashed_password', 'Gordon', 'Ramsay', (SELECT roleID FROM Role WHERE name = 'Cook'));
+('cook1', SHA2('cook1_password', 256), 'Gordon', 'Ramsay', (SELECT roleID FROM Role WHERE name = 'Cook'));
+
+-- Link the Cook to the User
+UPDATE Cook SET userID = (SELECT userID FROM User WHERE username = 'cook1') WHERE firstName = 'Gordon' AND lastName = 'Ramsay';
+
+-- Verify user login
+SELECT * FROM User
+WHERE username = 'admin' AND passwordHash = SHA2('admin_password', 256);
