@@ -47,7 +47,7 @@ We worked with MySQL to create the database and we used MySQL Workbench and phpM
 Now, you are good to go. Also note that you would have to change port for all your projects to 3307 for them to work properly. For eg: from $servername = "localhost"; to $servername = "localhost:3307"; in the database config file of your project.
 
 
-3. Open phpMyAdmin at:
+2. Open phpMyAdmin at:
 
    http://localhost/phpmyadmin/
 
